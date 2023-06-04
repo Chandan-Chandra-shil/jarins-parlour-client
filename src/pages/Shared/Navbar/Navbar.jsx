@@ -22,8 +22,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar container mx-auto bg-base-100">
-      <div className="navbar-start">
+    <div className="navbar container z-10 bg-opacity-30  mx-auto ">
+      <div className="navbar-start ">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -58,7 +58,10 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
       </div>
       <div className="navbar-end">
-        <Link to="/login" className="btn md:btn-md btn-sm px-8 py-2 font-normal btn-secondary">
+        <Link
+          to="/login"
+          className="btn md:btn-md btn-sm px-8 py-2 font-normal btn-secondary"
+        >
           Login
         </Link>
       </div>
